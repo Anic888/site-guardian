@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="Site Guardian popup mock — showing extension list, risk scores, and detected conflicts">
+  <defs>
+    <linearGradient id="popBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="520" rx="12" fill="url(#popBg)"/>
+
+  <!-- Title -->
+  <text x="450" y="36" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#e0f2fe">Per-site extension control</text>
+  <text x="450" y="58" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#94a3b8">What you see when you click the toolbar icon on a sensitive page</text>
+
+  <!-- Popup window -->
+  <g transform="translate(170,86)">
+    <rect width="380" height="400" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+
+    <!-- Header -->
+    <rect width="380" height="50" rx="12" fill="#1e293b"/>
+    <rect y="38" width="380" height="12" fill="#1e293b"/>
+    <text x="20" y="22" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700" fill="#7dd3fc">🛡 Site Guardian</text>
+    <text x="20" y="38" font-family="ui-monospace, Menlo, monospace" font-size="10" fill="#94a3b8">your-bank.com</text>
+
+    <!-- Mode chips -->
+    <g transform="translate(220,16)" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10" font-weight="600">
+      <rect width="48" height="22" rx="11" fill="#0f172a" stroke="#475569"/>
+      <text x="24" y="15" text-anchor="middle" fill="#94a3b8">Normal</text>
+      <g transform="translate(54,0)">
+        <rect width="58" height="22" rx="11" fill="#f59e0b"/>
+        <text x="29" y="15" text-anchor="middle" fill="#0f172a">Safe Mode</text>
+      </g>
+      <g transform="translate(118,0)">
+        <rect width="40" height="22" rx="11" fill="#0f172a" stroke="#475569"/>
+        <text x="20" y="15" text-anchor="middle" fill="#94a3b8">Off</text>
+      </g>
+    </g>
+
+    <!-- Conflict alert -->
+    <g transform="translate(16,66)">
+      <rect width="348" height="56" rx="8" fill="#451a03" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="14" y="22" font-family="ui-sans-serif, sans-serif" font-size="12" font-weight="700" fill="#fbbf24">⚠ Conflict detected</text>
+      <text x="14" y="40" font-family="ui-sans-serif, sans-serif" font-size="11" fill="#fed7aa">VPN Pro + Streaming Helper — known to break video</text>
+      <text x="14" y="52" font-family="ui-sans-serif, sans-serif" font-size="10" fill="#fdba74">source: known-conflicts DB · 2024-11</text>
+    </g>
+
+    <!-- Extension list header -->
+    <text x="16" y="146" font-family="ui-sans-serif, sans-serif" font-size="11" font-weight="700" fill="#64748b" letter-spacing="1">EXTENSIONS ACTIVE ON THIS PAGE · 5</text>
+
+    <!-- Extension rows -->
+    <g transform="translate(16,156)" font-family="ui-sans-serif, system-ui, sans-serif">
+      <!-- Row 1 -->
+      <g>
+        <rect width="348" height="44" rx="6" fill="#1e293b"/>
+        <rect x="10" y="10" width="24" height="24" rx="4" fill="#dc2626"/>
+        <text x="44" y="22" font-size="12" font-weight="600" fill="#e0f2fe">VPN Pro</text>
+        <text x="44" y="36" font-size="10" fill="#94a3b8">VPN · injected on page</text>
+        <g transform="translate(238,12)">
+          <rect width="46" height="20" rx="10" fill="#7f1d1d"/>
+          <text x="23" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#fecaca">HIGH</text>
+        </g>
+        <rect x="294" y="14" width="42" height="16" rx="8" fill="#0ea5e9"/>
+        <circle cx="324" cy="22" r="6" fill="#ffffff"/>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0,52)">
+        <rect width="348" height="44" rx="6" fill="#1e293b"/>
+        <rect x="10" y="10" width="24" height="24" rx="4" fill="#3b82f6"/>
+        <text x="44" y="22" font-size="12" font-weight="600" fill="#e0f2fe">Streaming Helper</text>
+        <text x="44" y="36" font-size="10" fill="#94a3b8">media · conflicts with VPN</text>
+        <g transform="translate(238,12)">
+          <rect width="46" height="20" rx="10" fill="#7c2d12"/>
+          <text x="23" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#fed7aa">MED</text>
+        </g>
+        <rect x="294" y="14" width="42" height="16" rx="8" fill="#475569"/>
+        <circle cx="306" cy="22" r="6" fill="#ffffff"/>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(0,104)">
+        <rect width="348" height="44" rx="6" fill="#1e293b"/>
+        <rect x="10" y="10" width="24" height="24" rx="4" fill="#10b981"/>
+        <text x="44" y="22" font-size="12" font-weight="600" fill="#e0f2fe">uBlock Origin</text>
+        <text x="44" y="36" font-size="10" fill="#94a3b8">ad-blocker · 21k subscribers</text>
+        <g transform="translate(238,12)">
+          <rect width="46" height="20" rx="10" fill="#064e3b"/>
+          <text x="23" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#6ee7b7">LOW</text>
+        </g>
+        <rect x="294" y="14" width="42" height="16" rx="8" fill="#0ea5e9"/>
+        <circle cx="324" cy="22" r="6" fill="#ffffff"/>
+      </g>
+
+      <!-- Row 4 -->
+      <g transform="translate(0,156)">
+        <rect width="348" height="44" rx="6" fill="#1e293b"/>
+        <rect x="10" y="10" width="24" height="24" rx="4" fill="#a855f7"/>
+        <text x="44" y="22" font-size="12" font-weight="600" fill="#e0f2fe">Dark Reader</text>
+        <text x="44" y="36" font-size="10" fill="#94a3b8">theme · last updated 6d ago</text>
+        <g transform="translate(238,12)">
+          <rect width="46" height="20" rx="10" fill="#064e3b"/>
+          <text x="23" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#6ee7b7">LOW</text>
+        </g>
+        <rect x="294" y="14" width="42" height="16" rx="8" fill="#0ea5e9"/>
+        <circle cx="324" cy="22" r="6" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <!-- Troubleshoot button -->
+    <g transform="translate(16,360)">
+      <rect width="348" height="28" rx="6" fill="#0ea5e9"/>
+      <text x="174" y="18" text-anchor="middle" font-family="ui-sans-serif, sans-serif" font-size="11" font-weight="700" fill="#ffffff">🔍 Troubleshoot mode — disable all others</text>
+    </g>
+  </g>
+
+  <!-- Side annotation -->
+  <g transform="translate(580,150)" font-family="ui-sans-serif, system-ui, sans-serif">
+    <text x="0" y="0" font-size="14" font-weight="700" fill="#7dd3fc">What you get</text>
+    <g font-size="12" fill="#cbd5e1">
+      <text x="0" y="30">✓ Risk score per extension</text>
+      <text x="0" y="54">✓ Known-conflict DB lookup</text>
+      <text x="0" y="78">✓ Per-site Normal / Safe / Off</text>
+      <text x="0" y="102">✓ One-click disable</text>
+      <text x="0" y="126">✓ Page injection trace</text>
+      <text x="0" y="150">✓ Performance counter</text>
+    </g>
+    <g transform="translate(0,180)" font-size="11" fill="#64748b">
+      <text x="0" y="0">All local · zero servers</text>
+      <text x="0" y="16">Opt-in browser sync</text>
+    </g>
+  </g>
+</svg>
